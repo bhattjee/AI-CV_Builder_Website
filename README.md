@@ -55,8 +55,8 @@ A modern, AI-powered resume builder designed to create professional, ATS-optimiz
 
 ### Clone the repository
 ```bash
-git clone https://github.com/bhattjee/loveable-ai-builder.git
-cd loveable-ai-builder
+git clone https://github.com/bhattjee/AI-CV_Builder_Website.git
+cd AI-CV_Builder_Website
 ```
 
 ### Install dependencies
@@ -140,7 +140,7 @@ bun run lint
 ## Project Structure
 
 ```
-loveable-ai-builder/
+AI-CV_Builder_Website/
 ├── src/
 │   ├── components/
 │   │   ├── landing/          # Landing page components
