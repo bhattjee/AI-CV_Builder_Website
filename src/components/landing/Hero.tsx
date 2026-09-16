@@ -44,8 +44,45 @@ const Hero = () => {
               <div className="w-3 h-3 rounded-full bg-cta/40" />
               <div className="w-3 h-3 rounded-full bg-primary/40" />
             </div>
-            <div className="bg-muted rounded-lg h-full flex items-center justify-center text-muted-foreground text-sm">
-              Product Screenshot Placeholder
+            <div className="bg-muted rounded-lg h-full flex items-center justify-center text-muted-foreground text-sm overflow-hidden relative">
+              {/* Resume Builder Interface Mockup */}
+              <div className="absolute inset-0 bg-gradient-to-br from-background to-muted/50 p-4">
+                <div className="h-full flex gap-4">
+                  {/* Left sidebar */}
+                  <div className="w-1/4 bg-card rounded-lg p-3 space-y-2">
+                    <div className="h-3 bg-primary/20 rounded w-3/4" />
+                    <div className="h-2 bg-muted rounded w-full" />
+                    <div className="h-2 bg-muted rounded w-5/6" />
+                    <div className="h-2 bg-muted rounded w-full" />
+                    <div className="h-2 bg-muted rounded w-4/5" />
+                    <div className="mt-4 h-2 bg-primary/20 rounded w-1/2" />
+                    <div className="h-2 bg-muted rounded w-full" />
+                    <div className="h-2 bg-muted rounded w-3/4" />
+                  </div>
+                  {/* Main content */}
+                  <div className="flex-1 bg-white rounded-lg p-4 shadow-inner">
+                    <div className="flex gap-3 mb-4">
+                      <div className="w-12 h-12 rounded-full bg-primary/10" />
+                      <div className="flex-1 space-y-2">
+                        <div className="h-3 bg-foreground/20 rounded w-1/2" />
+                        <div className="h-2 bg-muted rounded w-3/4" />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-2 bg-muted rounded w-full" />
+                      <div className="h-2 bg-muted rounded w-5/6" />
+                      <div className="h-2 bg-muted rounded w-full" />
+                      <div className="h-2 bg-muted rounded w-4/5" />
+                    </div>
+                    <div className="mt-4 space-y-2">
+                      <div className="h-2 bg-primary/20 rounded w-1/3" />
+                      <div className="h-2 bg-muted rounded w-full" />
+                      <div className="h-2 bg-muted rounded w-5/6" />
+                      <div className="h-2 bg-muted rounded w-full" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

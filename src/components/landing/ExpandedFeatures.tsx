@@ -26,8 +26,52 @@ const ExpandedFeatures = () => {
           {items.map((item) => (
             <div key={item.title} className={`flex flex-col ${item.flip ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 items-center`}>
               <div className="flex-1">
-                <div className="bg-muted rounded-2xl aspect-[16/10] flex items-center justify-center">
-                  <item.icon size={48} className="text-primary/30" />
+                <div className="bg-muted rounded-2xl aspect-[16/10] flex items-center justify-center overflow-hidden relative">
+                  {item.title.includes("Resignation") && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-background to-muted/50 p-6">
+                      <div className="bg-white rounded-lg shadow-lg p-4 h-full">
+                        <div className="space-y-3">
+                          <div className="h-3 bg-foreground/20 rounded w-1/3" />
+                          <div className="h-2 bg-muted rounded w-full" />
+                          <div className="h-2 bg-muted rounded w-5/6" />
+                          <div className="h-2 bg-muted rounded w-full" />
+                          <div className="mt-4 h-2 bg-primary/20 rounded w-1/4" />
+                          <div className="h-2 bg-muted rounded w-full" />
+                          <div className="h-2 bg-muted rounded w-4/5" />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {item.title.includes("Cover Letter") && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-background to-muted/50 p-6">
+                      <div className="bg-white rounded-lg shadow-lg p-4 h-full">
+                        <div className="space-y-3">
+                          <div className="h-2 bg-muted rounded w-1/4" />
+                          <div className="h-2 bg-muted rounded w-1/3" />
+                          <div className="h-2 bg-foreground/20 rounded w-1/2" />
+                          <div className="mt-4 h-2 bg-muted rounded w-full" />
+                          <div className="h-2 bg-muted rounded w-5/6" />
+                          <div className="h-2 bg-muted rounded w-full" />
+                          <div className="h-2 bg-primary/20 rounded w-1/3" />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {item.title.includes("Templates") && (
+                    <div className="absolute inset-0 bg-gradient-to-br from-background to-muted/50 p-6">
+                      <div className="grid grid-cols-3 gap-3 h-full">
+                        {[1, 2, 3].map((i) => (
+                          <div key={i} className="bg-white rounded-lg shadow p-2">
+                            <div className="space-y-1">
+                              <div className="h-2 bg-muted rounded w-full" />
+                              <div className="h-1.5 bg-muted/60 rounded w-3/4" />
+                              <div className="h-1.5 bg-muted/60 rounded w-full" />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="flex-1 space-y-4">
