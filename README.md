@@ -1,4 +1,4 @@
-# AI Resume Builder
+# AI Resume Builder Homepage Website
 
 A modern, AI-powered resume builder designed to create professional, ATS-optimized resumes that help job seekers stand out in the competitive job market. Built with React, TypeScript, and modern web technologies.
 
@@ -180,7 +180,7 @@ The application uses CSS variables for theming. Modify `src/index.css` to custom
 ### Component Customization
 UI components are built with Radix UI and TailwindCSS. Modify components in `src/components/ui/` to fit your needs.
 
-## 🌐 Deployment
+## Deployment
 
 ### Vercel
 ```bash
